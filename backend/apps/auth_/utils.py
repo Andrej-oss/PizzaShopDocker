@@ -1,4 +1,5 @@
 from datetime import timedelta
+import time
 
 from django.core import mail
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -11,6 +12,7 @@ class EmailToken(RefreshToken):
 class Utils:
     @staticmethod
     def send_mail(subject, body, to, **kwargs):
+        time.sleep(10)
         message = mail.EmailMessage(subject, body, to=to, **kwargs)
         message.send()
 
