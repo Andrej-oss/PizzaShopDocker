@@ -1,0 +1,14 @@
+.container{
+  position: fixed;
+  top:50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+mat-card-content{
+  display: flex;
+  flex-direction: column;
+}
